@@ -1,6 +1,6 @@
 import { Theme } from "@/types";
 
-export const lighTheme: Theme = {
+export const lightTheme: Theme = {
     appBackground: '#FFF',
     appColor: '#000',
     appDefaultStroke: '#E0E0E0',
@@ -25,7 +25,7 @@ export const lighTheme: Theme = {
         warning: 'F7A300',
     },
     textInput: {
-        active: '#060B26',
+        active: '#FFF',
         activeColor: '#000',
         borderColor: '#E0E0E0',
         disabled: '#EEE',
