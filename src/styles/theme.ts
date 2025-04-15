@@ -19,10 +19,10 @@ export const lightTheme: Theme = {
     },
     card: {
         alert: '#E80000',
-        background: '#060B26',
+        background: '#FFF',
         border: '#E0E0E0',
         sucess: '#008000',
-        warning: 'F7A300',
+        warning: '#F7A300',
     },
     textInput: {
         active: '#FFF',
