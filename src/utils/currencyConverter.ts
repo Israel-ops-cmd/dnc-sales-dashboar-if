@@ -1,6 +1,6 @@
 /**
  * Convert to BRL currency format
- * @param value - Number to converted
+ * @param value - Number to be converted
  * @return Converted BRL string
  */
 
