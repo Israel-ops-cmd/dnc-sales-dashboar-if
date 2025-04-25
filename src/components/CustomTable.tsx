@@ -10,12 +10,27 @@ const TableWrapper = styled.div`
         width: 100%;
         border-collapse: collapse;
 
+        .ellipsis {
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ellipsis-sm {
+            width: ${pxToRem(300)}
+        }
+
+        .ellipsis-xs {
+            width: ${pxToRem(150)}
+        }
+
         th,
         td {
             height: ${pxToRem(48)};
             padding: 0 ${pxToRem(8)} 0 0;
             text-align: left;
-            &: last-child {
+            &:last-child {
                 text-align: right;
                 padding: 0;
             }
@@ -27,9 +42,9 @@ const TableWrapper = styled.div`
         }
 
         tr {
-            border-botton: ${pxToRem(1)} solid ${(props) => props.theme.appDefaultStroke};
-            &: last-child {
-                border-botton: none;
+            border-bottom: ${pxToRem(1)} solid ${(props) => props.theme.appDefaultStroke};
+            &:last-child {
+                border-bottom: none;
             }
         }
     }
