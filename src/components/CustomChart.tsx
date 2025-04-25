@@ -12,7 +12,7 @@ import {
 } from 'chart.js'
 import { Line } from "react-chartjs-2"
 import { Bar } from "react-chartjs-2"
-import { customChatProps } from "@/types"
+import { CustomChartProps } from "@/types"
 
 ChartJS.register(
     CategoryScale,
@@ -25,7 +25,7 @@ ChartJS.register(
     Legend,
 )
 
-function CustomChart(props: customChatProps) {
+function CustomChart(props: CustomChartProps) {
     const { data, labels, type } = props
     const theme = useTheme()
     const options = {

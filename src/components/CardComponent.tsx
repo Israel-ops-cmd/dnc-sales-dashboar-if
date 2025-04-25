@@ -12,9 +12,9 @@ export const CardComponent = styled.div`
        background-color: ${(props) => props.theme.card.alert}; 
        border-color: ${(props) => props.theme.card.alert};
     }
-    &.sucess {
-       background-color: ${(props) => props.theme.card.sucess}; 
-       border-color: ${(props) => props.theme.card.sucess};
+    &.success {
+       background-color: ${(props) => props.theme.card.success}; 
+       border-color: ${(props) => props.theme.card.success};
     }
     &.warning {
        background-color: ${(props) => props.theme.card.warning}; 

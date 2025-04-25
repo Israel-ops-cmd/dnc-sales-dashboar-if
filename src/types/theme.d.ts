@@ -19,7 +19,7 @@ export interface Theme {
         alert: string
         background: string
         border: string
-        sucess: string
+        success: string
         warning: string
     }
     textInput: {
@@ -34,6 +34,6 @@ export interface Theme {
     typographies: {
         error: string
         subtitle: string
-        sucess: string
+        success: string
     }
 }
