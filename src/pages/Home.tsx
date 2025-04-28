@@ -18,7 +18,6 @@ function Home() {
         loading: highlightsLoading,
         error: highlightsError,
     } = useGet<HighlightsData[]>('sales/highlights')
-    console.log(highlightsData)
 
     const {
         data: salesMonthData,
