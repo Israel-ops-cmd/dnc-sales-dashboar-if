@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 // COMPONENTS
 import { CardComponent, CustomChart, CustomTable, Header, StyledH2, StyledH3, StyledSpan } from "@/components"
 import AvatarsList from "@/components/AvatarsList"
@@ -88,7 +90,7 @@ function Home() {
                                 <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(33.33% - 24px)' } }}>
                                     <CardComponent className={highlightsLoading ? 'skeleton-loading skeleton-loading-mh-1' : ''}>
                                         {!highlightsLoading && highlightsData && (
-                                            <>
+                                            <Link to='/leads'>
                                                 <StyledH2 className='mb-1'>Leads Contactados</StyledH2>
                                                 <StyledH3 className='mb-1' size={40} lineheight={40}>
                                                     {(highlightsData[2].value)}
@@ -96,7 +98,7 @@ function Home() {
                                                 <StyledSpan>
                                                     {highlightsData[2].subtitle}
                                                 </StyledSpan>
-                                            </>
+                                            </Link>
                                         )}
                                     </CardComponent>
                                 </Grid>
