@@ -14,8 +14,6 @@ import { logout } from "@/services"
 
 // TYPES
 import { InputProps, ProfileData, ProfileEditableData, MessageProps } from "@/types"
-import { clear } from "node:console"
-
 
 
 function Profile() {
