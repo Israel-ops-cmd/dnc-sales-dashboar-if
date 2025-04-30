@@ -15,7 +15,18 @@ export const useFormValidation = (inputs: InputProps[]) => {
                 return /\S+@\S+\.\S+/.test(String(formValues[index]))
             }
             if (inputs.type === 'password'){
-                return String(formValues[index]).length > 7
+                const password = String(value)
+                const hasCorrectLength = password.length >= 8 && password.length <= 16
+                const hasUpperCaseLetter = /[A-Z]/.test(password)
+                const hasSpecialCharacter = /[!@#$%^&*(),.?":{}|<>]/.test(password)
+                const hasNumber = /\d/.test(password)
+                return (
+                    hasCorrectLength && 
+                    hasUpperCaseLetter && 
+                    hasSpecialCharacter && 
+                    hasNumber
+                )
+
             }
             return true
         })
