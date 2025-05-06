@@ -54,7 +54,7 @@ function Home() {
                         !highlightsError && (
                             <>
                                 <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(33.33% - 24px)' } }}>
-                                    <CardComponent className={highlightsLoading ? 'skeleton-loading skeleton-loading-mh-1' : ''}>
+                                    <CardComponent id="total-sales" className={highlightsLoading ? 'skeleton-loading skeleton-loading-mh-1' : ''}>
                                         {!highlightsLoading && highlightsData && (
                                             <>
                                                 <StyledH2 className='mb-1'>Total de vendas no mês</StyledH2>
@@ -69,7 +69,7 @@ function Home() {
                                     </CardComponent>
                                 </Grid>
                                 <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(33.33% - 24px)' } }}>
-                                    <CardComponent className={
+                                    <CardComponent id="month-goals" className={
                                         highlightsData
                                         ? highlightsData[1].subtitle
                                         : 'skeleton-loading skeleton-loading-mh-1'
@@ -88,7 +88,7 @@ function Home() {
                                     </CardComponent>
                                 </Grid>
                                 <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(33.33% - 24px)' } }}>
-                                    <CardComponent className={highlightsLoading ? 'skeleton-loading skeleton-loading-mh-1' : ''}>
+                                    <CardComponent id="total-leads" className={highlightsLoading ? 'skeleton-loading skeleton-loading-mh-1' : ''}>
                                         {!highlightsLoading && highlightsData && (
                                             <Link to='/leads'>
                                                 <StyledH2 className='mb-1'>Leads Contactados</StyledH2>
@@ -108,7 +108,7 @@ function Home() {
                     <Grid component="div" sx={{ width: { xs: '100%', md: '58.33%' } }}>
                         {
                             !salesMonthError && (
-                                <CardComponent className={salesMonthLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''}>
+                                <CardComponent id="month-sales-chart" className={salesMonthLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''}>
                                     {
                                         !salesMonthLoading && salesMonthData && (
                                             <>
@@ -128,7 +128,7 @@ function Home() {
                     <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(41.66% - 32px)' } }}>
                         {
                             !salesStarsError && (
-                                <CardComponent className={
+                                <CardComponent id="sales-stars" className={
                                     salesStarsLoading ? 
                                     'skeleton-loading skeleton-loading-mh-2'
                                     : ''
@@ -154,6 +154,7 @@ function Home() {
                     <Grid component="div" sx={{ width: { xs: '100%', md: '41.66%' } }}>
                         {!newsError &&(
                                 <CardComponent 
+                                    id="news"
                                     className={
                                     newsLoading ? 
                                     'skeleton-loading skeleton-loading-mh-2'
@@ -184,7 +185,7 @@ function Home() {
                     <Grid component="div" sx={{ width: { xs: '100%', md: 'calc(58.33% - 32px)' } }}>
                         {
                             !salesYearError && (
-                                <CardComponent className={salesYearLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''}>
+                                <CardComponent id="year-sales-chart" className={salesYearLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''}>
                                     {
                                         !salesYearLoading && salesYearData && (
                                             <>

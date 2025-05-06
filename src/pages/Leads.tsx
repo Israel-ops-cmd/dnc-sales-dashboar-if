@@ -93,7 +93,7 @@ function Leads() {
                 <Grid container spacing={4}>
                     <Grid component="div" sx={{ width: { xs: '100%', sm: 'calc(58.33% - 16px)' } }}>
                         <CardComponent className={leadsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''}>
-                            <StyledH2 className="mb-1">Meus leads</StyledH2>
+                            <StyledH2 id="leads-title" className="mb-1">Meus leads</StyledH2>
                             { leadsLoading ? null : (
                                 !leadsError && (
                                     leadsData?.length ? (
